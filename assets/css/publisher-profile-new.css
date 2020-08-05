@@ -1,0 +1,317 @@
+ /* General stylings */
+ *{
+    font-family: "Source Sans Pro", sans-serif;
+    
+  }
+
+:root {
+    --main-color: #362f74;
+    --main-grey-color: #233a3a;
+    --bg-light: #f0f7ff;
+    --p-button: 1.9rem;
+    --sideBar-secondary-color: #f5f6fa;
+    --main-text:2em;
+    --small-text:1.25em;
+    --grey-text:#828282;
+    --smaller-text:0.875em;
+    --tags-background:#9B9B9B;
+  }
+
+.small-text{
+    font-size: var(--small-text);
+}
+
+.smaller-text{
+    font-size: var(--smaller-text);
+}
+
+.grey-text{
+    color: var(--grey-text);
+}
+
+.purple-text{
+    color: var(--main-color);
+}
+
+
+/* top nav section */
+.big-nav{
+    padding-right: 3%;
+}
+
+.sidebar__link-active{
+    color: var(--main-color);
+}
+
+
+/* main content section */
+/* first row card */
+.main-holder{
+    background-color: var(--sideBar-secondary-color);
+    padding: 0.5%;
+}
+
+.first-row{
+    padding: 5%;
+    background: #FFFFFF;
+    box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 90%;
+    margin-bottom: 8%;
+}
+
+.pub-img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.pub-name{
+    color: var(--main-color);
+}
+
+.stars{
+    margin-bottom: 2%;
+    width: 13%;
+}
+
+.stars-holder{
+    display: inline-block;
+}
+
+.tags-holder{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 8%;
+}
+
+.tag{
+    background-color: var(--tags-background);
+    padding: 1.5% 3%;
+    margin-right: 3%;
+    margin-bottom: 2%;
+}
+
+.tag-name{
+    color: white;
+    
+}
+
+.details-card{
+    padding-top: 1%;
+}
+
+
+
+.edit-btn{
+    color: white;
+    background-color: var(--main-color);
+    border-radius: 5px;
+    padding: 7% 12%;
+    margin-top: 137%;
+}
+
+.edit-btn:hover{
+    color: white;
+}
+
+.third-section{
+    padding-top: 2%;
+    text-align: right;
+}
+
+.settings-btn{
+    text-decoration: none;
+    border: none;
+    background-color: white;
+}
+
+.settings-holder{
+    padding-left: 90%;
+}
+
+/* social media section */
+.socials-holder{
+    border-top:1px solid #C4C4C4 ;
+    padding: 5% 0 ;
+    margin-top: 8%;
+}
+
+.active-sm{
+    color: #F58B11;
+}
+
+.sm-icons-holder{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sm-icon{
+    margin-right: 13%;
+    margin-bottom: 3%;
+}
+
+
+
+.sm-name{
+    margin-bottom: 4%;
+}
+
+
+/* form section */
+.form-header{
+    margin-bottom: 6%;
+}
+
+.form-group{
+    width: 100%;
+}
+
+.pub-labels{
+    display: block;
+    margin-bottom: 1%;
+    font-size: 1.12em;
+}
+
+.pub-input{
+    padding: 2.5%;
+    background: rgba(54, 47, 116, 0.05);
+}
+
+.pub-input::placeholder{
+    color:  #7B7B7B;
+    font-size: 0.85em;
+}
+
+.form-each{
+    margin-bottom: 4%;
+}
+
+.pword{
+    position: relative;
+}
+
+.pword-show{
+    position: absolute;
+    top: 60%;
+    right: 3%;
+}
+
+/* media queries */
+@media screen and (min-width: 1024px) and (max-width: 1300px) {
+    .details-div h1, .details-div p{
+        margin: 0.2%;
+        padding: 0.2%;
+    }
+
+    .tags-holder{
+        margin-top: 2%;
+    }
+    .edit-btn{
+        margin-top: 90%;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1275px) {
+    .edit-btn{
+        margin-top: 135%;
+    }
+}
+
+
+
+/* @media screen and (min-width: 1024px) and (max-width: 1131px) {
+    .edit-btn{
+        margin-top: 134%;
+    }
+} */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .pub-img{
+        width: 100%;
+        height: 100%;
+        
+    }
+    .details-div h1, .details-div p{
+        margin: 0.2%;
+        padding: 0.2%;
+    }
+
+    h1{
+        font-size: 1.3rem;
+    }
+
+    .details-div p{
+        font-size: 0.8rem;
+    }
+
+    .first-row{
+        padding: 5% 10%;
+    }
+
+    .edit-btn{
+        margin-top: 105%;
+        padding: 7% 20%;
+    }
+}
+
+@media screen and (min-width: 768px)and (max-width: 769px){
+    h1{
+        font-size: 1rem;
+    }
+
+    .details-div p{
+        font-size: 0.6rem;
+    }
+
+    .first-row{
+        padding: 5% 12%;
+    }
+
+    .edit-btn{
+        padding: 15% 30%;
+        font-size: 0.6rem;
+        margin-top: 190%;
+    }
+
+}
+
+@media screen and (max-width: 767px){
+    .details-div{
+        text-align: center;
+        margin-top: 3%;
+    }
+
+    .tags-holder{
+        justify-content: center;
+    }
+
+    .tag{
+        padding: 1% 2% !important;
+    }
+
+    .settings-holder{
+        display: none;
+    }
+
+    .third-section{
+        text-align: center !important;
+    }
+
+    .edit-btn{
+        margin-top: 5%;
+        padding: 5% 18%;
+    }
+
+    .sm-name{
+        text-align: center;
+    }
+
+    .sm-icons-holder{
+        justify-content: center;
+    }
+}
+
+
+
+
