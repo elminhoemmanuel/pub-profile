@@ -191,10 +191,12 @@
     position: relative;
 }
 
-.pword-show{
+.pword-toggle{
     position: absolute;
     top: 60%;
     right: 3%;
+    border: none;
+    background-color: none;
 }
 
 /* media queries */
